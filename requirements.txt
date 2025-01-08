@@ -1,0 +1,7 @@
+robotframework
+robotframework-tidy
+robotframework-browser
+robotframework-seleniumlibrary
+robotframework-Databaselibrary
+robotframework-oracledb-library
+msd-robotframework-xrayconvertor

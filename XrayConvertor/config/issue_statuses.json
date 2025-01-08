@@ -1,0 +1,17 @@
+{
+    "non-gxp": {
+      "Test": {
+        "editable_statuses": ["To Do", "In Progress", "In Review", "On Hold", "Cancelled", "Done"],
+        "runnable_statuses": ["Done"],
+        "create_issue_transitions": ["In Progress", "In Review", "Done"]
+      },
+      "TestExecution": {
+        "create_issue_transitions": ["In Progress", "In Review", "Done"]
+      },
+      "TestPlan": {
+        "editable_statuses": [],
+        "runnable_statuses": [],
+        "create_issue_transitions": ["In Progress", "In Review", "Done"]
+      }
+    }
+  }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.8 on win32)" generated="2025-01-08T12:58:01.145931" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\watkidel\Projects\fms_testing\tests">
+<suite id="s1-s1" name="Test Pattern" source="C:\Users\watkidel\Projects\fms_testing\tests\Test_Pattern.robot">
+<errors>
+<msg time="2025-01-08T12:58:13.192759" level="ERROR">Execution stopped by user.</msg>
+</errors>
+</robot>

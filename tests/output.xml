@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.11.8 on win32)" generated="2024-11-21T10:08:32.683253" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Pattern" source="C:\Users\watkidel\Projects\fms_testing\tests\Test_Pattern.robot">
+<test id="s1-t1" name="Validate_Pattern" line="5">
+<errors>
+<msg time="2024-11-21T10:08:34.794473" level="ERROR">Unexpected error: TypeError: keyword_store_extension() missing 1 required positional argument: 'prefixes'
+Traceback (most recent call last):
+  File "C:\Users\watkidel\AppData\Roaming\Python\Python311\site-packages\robot\utils\application.py", line 81, in _execute
+    rc = self.main(arguments, **options)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\watkidel\AppData\Roaming\Python\Python311\site-packages\robot\run.py", line 463, in main
+    result = suite.run(settings)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\watkidel\AppData\Roaming\Python\Python311\site-packages\robot\running\model.py", line 775, in run
+    self.visit(runner)
+  File "C:\Users\watkidel\AppData\Roaming\Python\Python311\site-packages\robot\model\testsuite.py", line 420, in visit
+    visitor.visit_suite(self)
+  File "C:\Users\watkidel\AppData\Roaming\Python\Python311\site-packages\robot\model\visitor.py", line 132, in visit_suite
+    suite.tests.visit(self)
+  File "C:\Users\watkidel\AppData\Roaming\Python\Python311\site-packages\robot\model\itemlist.py", line 102, in visit
+    item.visit(visitor)    # type: ignore
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\watkidel\AppData\Roaming\Python\Python311\site-packages\robot\model\testcase.py", line 177, in visit
+    visitor.visit_test(self)
+  File "C:\Users\watkidel\AppData\Roaming\Python\Python311\site-packages\robot\running\suiterunner.py", line 169, in visit_test
+    runner.run(data, result)
+  File "C:\Users\watkidel\AppData\Roaming\Python\Python311\site-packages\robot\running\bodyrunner.py", line 49, in run
+    item.run(result, self._context, self._run, self._templated)
+  File "C:\Users\watkidel\AppData\Roaming\Python\Python311\site-packages\robot\running\model.py", line 157, in run
+    return KeywordRunner(context, run).run(self, result.body.create_keyword())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\watkidel\AppData\Roaming\Python\Python311\site-packages\robot\running\bodyrunner.py", line 71, in run
+    runner = context.get_runner(name or data.name, recommend_on_failure=self._run)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\watkidel\AppData\Roaming\Python\Python311\site-packages\robot\running\context.py", line 333, in get_runner
+    return self.namespace.get_runner(name, recommend_on_failure)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\watkidel\AppData\Roaming\Python\Python311\site-packages\robot\running\namespace.py", line 217, in get_runner
+    return self._kw_store.get_runner(name, recommend_on_failure)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\watkidel\AppData\Roaming\Python\Python311\site-packages\robot\running\namespace.py", line 258, in get_runner
+    runner = self._get_runner(name)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\watkidel\AppData\Roaming\Python\Python311\site-packages\robot\running\namespace.py", line 291, in _get_runner
+    runner = self._get_bdd_style_runner(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: keyword_store_extension() missing 1 required positional argument: 'prefixes'</msg>
+</errors>
+</robot>
