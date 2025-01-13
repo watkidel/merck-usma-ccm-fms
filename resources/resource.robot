@@ -32,7 +32,7 @@ Query Table from Database
     Open Browser    ${baseUrl}    ${browser}
     Maximize Browser Window
     Set Selenium Speed    3
-- nav_To_Url
+nav_To_Url
     Keyword Store Extension     prefixes= -    name= nav_To_Url   self=self
     [Arguments]    ${urlpttn}
     ${Url}    Catenate    SEPARATOR=    ${baseUrl}    ${urlpttn}
@@ -59,7 +59,7 @@ Query Table from Database
     Keyword Store Extension     prefixes= -    name= Pattern Should Be Equal    self=self
     ${dataList}    Query Table from Database
     FOR    ${num}     IN RANGE    5
-        - nav_To_Url    ${dataList}[${num}][1]
+        nav_To_Url    ${dataList}[${num}][1]
         ${element}   - Find Pattern On Screen
         Should Be Equal    ${element}     ${dataList}[${num}][0]
         Capture Page Screenshot    Embed   
